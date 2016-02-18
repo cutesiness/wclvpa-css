@@ -1,0 +1,12 @@
+{
+  "name": "wclvpa",
+  "version": "0.1.0",
+  "devDependencies": {
+    "autoprefixer-core": "^5.2.1",
+    "cssnano": "^2.1.0",
+    "grunt": "^0.4.5",
+    "grunt-contrib-sass": "git+https://github.com/gruntjs/grunt-contrib-sass.git#e85ee70ccb8839867172b57ca1378293291f8037",
+    "grunt-contrib-watch": "~0.4.4",
+    "grunt-postcss": "^0.5.5"
+  }
+}

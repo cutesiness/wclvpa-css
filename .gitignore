@@ -1,0 +1,16 @@
+*.php
+_style.css
+style.css
+rtl.css
+
+.idea/
+.sass-cache/
+images/
+js/
+languages/
+lib/
+layouts/
+license.txt
+node_modules/
+readme.txt
+screenshot.png
