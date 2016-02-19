@@ -12,6 +12,9 @@
     height: 100%;
     vertical-align: middle;
   }
+  a {
+    border: 0;
+  }
 }
 
 .site-title {
@@ -22,6 +25,7 @@
 }
 
 .site-description {
+  color: $white;
   font: .7em $sans-serif;
   letter-spacing: .21em;
   text-transform: uppercase;
