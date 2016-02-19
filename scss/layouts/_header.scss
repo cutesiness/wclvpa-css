@@ -1,0 +1,28 @@
+.site-header {
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 500px;
+  color: $white;
+  text-align: center;
+  background: $blue;
+  hgroup {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+  }
+}
+
+.site-title {
+  font-size: 2.4em;
+  a {
+    color: lighten($link-color, 10%);
+  }
+}
+
+.site-description {
+  font: .7em $sans-serif;
+  letter-spacing: .21em;
+  text-transform: uppercase;
+}

@@ -1,0 +1,22 @@
+.site-navigation {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  font: .7em $sans-serif;
+  letter-spacing: .21em;
+  text-transform: uppercase;
+  ul {
+    li {
+      display: inline-block;
+      a {
+        display: block;
+        padding: 1em 1.2em;
+        color: $white;
+        &:hover {
+          background: lighten($blue, 20%);
+        }
+      }
+    }
+  }
+}

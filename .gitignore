@@ -9,7 +9,7 @@ images/
 js/
 languages/
 lib/
-layouts/
+/layouts
 license.txt
 node_modules/
 readme.txt
