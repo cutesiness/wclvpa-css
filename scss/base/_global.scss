@@ -11,3 +11,7 @@ a {
   text-decoration: none;
   border-bottom: 1px solid lighten($orange, 20%);
 }
+
+img {
+  height: auto; // for all the width adjustments
+}
