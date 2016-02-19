@@ -1,6 +1,6 @@
 *.php
-_style.css
-style.css
+/_style.css
+/style.css
 rtl.css
 
 .idea/

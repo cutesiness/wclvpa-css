@@ -1,0 +1,11 @@
+body {
+  color: $text-color;
+  font: $font-size $serif;
+  line-height: 2;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: $link-color;
+}
