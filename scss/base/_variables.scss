@@ -1,4 +1,15 @@
-// Colors
+/* Susy */
+
+$susy: (
+  columns: 12,
+  gutters: 1/2,
+  container: 1180px,
+  global-box-sizing: border-box,
+  // debug: (image: show)
+);
+
+
+/* Colors */
 
 $white: #fff;
 $dark-gray: #464342;
