@@ -1,11 +1,33 @@
 /* Page Specific Styles */
 
-/*
 body {
   &.home {
-    .entry-header {
+    .entry-title {
+      position: static !important;
+    }
+    .entry-thumbnail {
       display: none;
     }
   }
 }
-*/
+
+
+/* Page Content */
+
+article.page {
+  .entry-header {
+    position: relative;
+  }
+  .entry-title {
+    position: absolute;
+    top: 0;
+  }
+  .entry-thumbnail {
+    img {
+      width: 100%;
+    }
+  }
+  p {
+    padding: 0 3em;
+  }
+}
