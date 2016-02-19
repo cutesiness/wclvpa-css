@@ -1,12 +1,20 @@
-.site-navigation {
+#navbar {
   position: absolute;
   top:0;
   left: 0;
   width: 100%;
+}
+
+#site-navigation {
+  @include container;
   font: .7em $sans-serif;
   letter-spacing: .21em;
   text-transform: uppercase;
+  .menu-toggle {
+    display: none;
+  }
   ul {
+    @include span(8);
     li {
       display: inline-block;
       a {
@@ -18,5 +26,8 @@
         }
       }
     }
+  }
+  .search-form {
+    @include span(3 last);
   }
 }
