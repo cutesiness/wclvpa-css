@@ -1,3 +1,16 @@
 $sans-serif: 'Helvetica', 'Arial', sans-serif;
 $serif: 'Georgia', sans-serif;
 $font-size: 22px;
+
+p {
+  margin-bottom: 1em;
+  word-break: break-word; //non-standart css for webkit
+  word-wrap: break-word;
+  hyphens: auto;
+  hyphenate-lines: 3;
+  font-feature-settings: "liga", "dlig";
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+}
