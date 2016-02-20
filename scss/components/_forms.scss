@@ -1,0 +1,8 @@
+input {
+  padding: .5em 1em;
+  border-radius: $border-radius;
+  border: 2px solid $light-gray;
+  &[type="submit"] {
+    @extend %button-base;
+  }
+}

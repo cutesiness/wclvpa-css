@@ -1,11 +1,21 @@
-%button {
+%button-base {
   display: inline-block;
   padding: .5em 1em;
-  color: $white;
-  font: .6em $sans-serif;
-  letter-spacing: .15em;
+  font-family: $sans-serif;
+//  letter-spacing: .15em;
   text-transform: uppercase;
-  background: $gray;
   border: 0;
-  border-radius: 8px;
+  border-radius: $border-radius;
+}
+
+%button {
+  @extend %button-base;
+  color: $white;
+  background: $gray;
+}
+
+%button-light {
+  @extend %button-base;
+  color: darken($gray, 10%);
+  background: lighten($light-gray, 10%);
 }

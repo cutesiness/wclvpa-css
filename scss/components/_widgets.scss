@@ -1,0 +1,14 @@
+/* After Header */
+
+#after-header-wrapper {
+  .widget_search {
+    input {
+      font-size: 1em;
+      &[type="submit"] {
+        @extend %button-light;
+        font-style: italic;
+        text-transform: none;
+      }
+    }
+  }
+}
