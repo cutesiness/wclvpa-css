@@ -4,7 +4,8 @@
   width: 100%;
   height: 500px;
   color: $white;
-  background: $blue url('../img/placeholder-bg.jpg');
+  background: $blue url('../img/placeholder-bg_02.jpg');
+//  background-image: url('../img/body-bg.png');
   background-position: center;
   background-size: cover !important;
   .home-link {
@@ -13,7 +14,8 @@
     height: 100%;
     text-align: center;
     vertical-align: middle;
-    background: transparentize($blue, .3);
+    background: transparentize($dark-blue, .3);
+ //   background: linear-gradient(60deg, transparentize($white, .3),transparentize($blue, .3));
   }
   a {
     border: 0;
@@ -37,8 +39,9 @@
     content: '';
     display: block;
     width: 400px;
-    height: 368px;
-    margin: 0 auto;
-    background-image: url('../img/placeholder-logo.png');
+    height: 400px;
+    margin: 0 auto 1em;
+    background-image: url('../img/placeholder-logo_02.png');
+    background-size: cover;
   }
 }
