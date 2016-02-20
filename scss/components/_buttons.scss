@@ -1,22 +1,31 @@
 %button-base {
+  position: relative;
   display: inline-block;
-//  padding: .5em 1em;
   padding: .3em .8em;
   font-family: $sans-serif;
-//  letter-spacing: .15em;
   text-transform: uppercase;
   border: 0;
   border-radius: $border-radius;
+  &:focus {
+    top: 2px;
+    left: 2px;
+  }
 }
 
 %button {
   @extend %button-base;
   color: $white;
   background: $gray;
+  &:hover {
+    background: darken($gray, 10%);
+  }
 }
 
 %button-light {
   @extend %button-base;
   color: darken($gray, 13%);
-  background: lighten($light-gray, 8%);
+  background: $lightest-gray;
+  &:hover {
+    background: darken($lightest-gray, 10%);
+  }
 }

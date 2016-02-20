@@ -31,8 +31,12 @@
       &[type="submit"] {
         @extend %button-light;
         font-style: italic;
+        letter-spacing: .05em;
         text-transform: none;
-        border: 2px solid lighten($light-gray, 8%);
+        border: 2px solid $lightest-gray;
+        &:hover {
+          border: 2px solid darken($lightest-gray, 10%);
+        }
       }
     }
   }

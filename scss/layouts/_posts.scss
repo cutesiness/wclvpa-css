@@ -2,8 +2,10 @@ article {
   padding: 2em;
 }
 
-.entry-meta {
-  .post-edit-link {
-    @extend %button;
-  }
+
+.post-edit-link {
+  @extend %button;
+  padding: .05em .8em;
+  font-size: .7em;
+  letter-spacing: .15em;
 }
