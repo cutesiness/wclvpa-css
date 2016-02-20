@@ -1,13 +1,13 @@
 #main {
   @include container;
   margin: 2em auto;
-  padding: 2em 0;
   background: $white;
 }
 
 #primary {
   @include span(10);
   @include push(1);
+  background: $white;
 }
 
 #secondary {
@@ -18,8 +18,11 @@
 
 body {
   &.sidebar {
+    #main {
+      background: transparent;
+    }
     #primary {
-      @include span(8);
+      @include span(9);
       @include push(0);
       .entry-content {
         p {
@@ -28,7 +31,7 @@ body {
       }
     }
     #tertiary {
-      @include span(4 last);
+      @include span(3 last);
     }
   }
 }
