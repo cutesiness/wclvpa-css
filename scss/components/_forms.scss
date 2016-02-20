@@ -1,8 +1,20 @@
 input {
-  padding: .5em 1em;
+//  padding: .5em 1em;
+  padding: .3em .8em;
+  color: $text-color;
+  font-family: $serif;
   border-radius: $border-radius;
   border: 2px solid $light-gray;
+  &:focus {
+    outline: none;
+    border-color: $blue;
+  }
   &[type="submit"] {
+    position: relative;
     @extend %button-base;
+    &:focus {
+      top: 2px;
+      left: 2px;
+    }
   }
 }

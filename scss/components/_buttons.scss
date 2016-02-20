@@ -1,6 +1,7 @@
 %button-base {
   display: inline-block;
-  padding: .5em 1em;
+//  padding: .5em 1em;
+  padding: .3em .8em;
   font-family: $sans-serif;
 //  letter-spacing: .15em;
   text-transform: uppercase;
@@ -16,6 +17,6 @@
 
 %button-light {
   @extend %button-base;
-  color: darken($gray, 10%);
-  background: lighten($light-gray, 10%);
+  color: darken($gray, 13%);
+  background: lighten($light-gray, 8%);
 }

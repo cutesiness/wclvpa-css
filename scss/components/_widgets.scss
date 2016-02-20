@@ -2,12 +2,37 @@
 
 #after-header-wrapper {
   .widget_search {
+    text-align: center;
+    #searchform {
+      > div {
+        display: inline-block;
+        max-width: 720px;
+        width: 100%;
+      }
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        vertical-align: middle;
+        background: url('../img/search.svg') no-repeat right center;
+        background-size: contain;
+      }
+    }
     input {
+      display: inline-block;
       font-size: 1em;
+      vertical-align: middle;
+      &[type="text"] {
+        max-width: 540px;
+        width: 100%;
+        margin: 0 .5em;
+      }
       &[type="submit"] {
         @extend %button-light;
         font-style: italic;
         text-transform: none;
+        border: 2px solid lighten($light-gray, 8%);
       }
     }
   }

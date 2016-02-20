@@ -1,10 +1,10 @@
-$sans-serif: 'Helvetica', 'Arial', sans-serif;
-$serif: 'Georgia', sans-serif;
+$sans-serif: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+$serif: 'Lora', 'Georgia', sans-serif;
 $font-size: 22px;
 
 p {
   margin-bottom: 1em;
-  word-break: break-word; //non-standart css for webkit
+  word-break: break-word; //non-standard css for webkit
   word-wrap: break-word;
   hyphens: auto;
   hyphenate-lines: 3;
