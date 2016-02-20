@@ -5,9 +5,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url('../img/triangle-bg.png');
-//  background-size: cover;
-//  background-repeat: no-repeat;
-//  background: linear-gradient(60deg, $white, darken($white, 10%));
+  &.admin-bar {
+    #main-menu-wrapper {
+      top: 32px;
+    }
+  }
 }
 
 a {

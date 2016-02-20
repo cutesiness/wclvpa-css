@@ -1,26 +1,30 @@
-#navbar {
+#main-menu-wrapper {
   position: absolute;
   top:0;
   left: 0;
   width: 100%;
 }
 
-#site-navigation {
+#main-menu {
   @include container;
   font: .7em $sans-serif;
   letter-spacing: .21em;
+  text-align: center;
   text-transform: uppercase;
   .menu-toggle {
     display: none;
   }
+  .menu {
+    width: 100%;
+  }
   ul {
-    @include span(8);
     li {
       display: inline-block;
       a {
         display: block;
         padding: 1em 1.2em;
         color: $white;
+        border: 0;
         &:hover {
           background: lighten($blue, 20%);
         }
