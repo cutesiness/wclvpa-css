@@ -1,0 +1,11 @@
+%button {
+  display: inline-block;
+  padding: .5em 1em;
+  color: $white;
+  font: .6em $sans-serif;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  background: $gray;
+  border: 0;
+  border-radius: 8px;
+}
