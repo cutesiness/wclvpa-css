@@ -1,0 +1,23 @@
+.site-footer {
+  color: $white;
+  font: .72em/2 $sans-serif;
+  background-color: $light-blue;
+  a {
+    color: $white;
+    border-bottom-color: $white;
+  }
+}
+
+#secondary {
+  padding: 2em 0;
+  .widget {
+    @include span(3);
+    margin-bottom: 2em;
+  }
+}
+
+.site-info {
+  padding: 1em 0;
+  text-align: center;
+  background: $orange;
+}

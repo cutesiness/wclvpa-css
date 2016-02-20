@@ -3,16 +3,27 @@
   margin: 3em auto;
 }
 
+#primary {
+  @include span(10);
+  @include push(1);
+}
+
+#secondary {
+  @include container;
+}
+
 /* Sidebar conditional */
 
 body {
-  #primary {
-    @include span(10);
-    @include push(1);
-  }
   &.sidebar {
     #primary {
       @include span(8);
+      @include push(0);
+      .entry-content {
+        p {
+          padding: 0;
+        }
+      }
     }
     #tertiary {
       @include span(4 last);
