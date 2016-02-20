@@ -37,3 +37,38 @@
     }
   }
 }
+
+
+/* Before Content */
+
+.before-content {
+  .xoxo {
+    display: table;
+    margin: -1em; // align the sides with main container
+    border-spacing: 1em;
+    li {
+      display: table-cell;
+      width: 33.33%;
+      padding: 1em;
+      vertical-align: top;
+      &:nth-child(odd) {
+        background-color: $lightest-blue;
+      }
+      &:nth-child(even) {
+        background-color: $lightest-gray;
+      }
+      .fa {
+        display: block;
+        margin: .2em 0;
+        font-size: 6em;
+        text-align: center;
+      }
+    }
+  }
+  .widget-title {
+    text-align: center;
+  }
+  .textwidget {
+
+  }
+}
