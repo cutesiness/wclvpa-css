@@ -76,3 +76,17 @@
 
   }
 }
+
+
+/* Content Sidebar */
+
+#content-row-1 {
+  font: .72em/2 $sans-serif;
+  .xoxo {
+    > li {
+      background: $body-bg;
+      margin: 0 0 2em;
+      padding: 1.36em;
+    }
+  }
+}

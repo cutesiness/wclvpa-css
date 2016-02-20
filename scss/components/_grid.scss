@@ -1,6 +1,6 @@
 /* Wrappers */
 
-#after-header-wrapper, #before-content {
+#after-header-wrapper, #before-content, #content-row-wrapper {
   @include container;
   margin: 2em auto;
 }
@@ -8,8 +8,6 @@
 /* Main Content */
 
 #main {
-  @include container;
-  margin: 2em auto;
   padding: 2em;
   background: $white;
 }
@@ -21,21 +19,21 @@
 
 /* Sidebar conditional */
 
-body {
-  &.sidebar {
+#content-row-wrapper {
+  .sidebar-row {
     #main {
+      padding: 0;
       background: transparent;
     }
-    #primary {
+    #container {
       @include span(9);
       @include push(0);
-      .entry-content {
-        p {
-          padding: 0;
-        }
+      background: $white;
+      #content {
+        padding: 1.5em 2em;
       }
     }
-    #tertiary {
+    .widget-area {
       @include span(3 last);
     }
   }
