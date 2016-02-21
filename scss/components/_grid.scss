@@ -1,6 +1,6 @@
 /* Wrappers */
 
-#after-header-wrapper, #before-content, #content-row-wrapper, #after-content-wrapper {
+#after-header-wrapper, #before-content, #content-row-wrapper, #after-content-wrapper, #before-footer {
   @include container;
   margin: 2em auto;
 }
