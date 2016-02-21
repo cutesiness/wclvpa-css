@@ -29,3 +29,12 @@
     background: darken($lightest-gray, 10%);
   }
 }
+
+%button-orange {
+  @extend %button-base;
+  color: $white;
+  background: $light-orange;
+  &:hover {
+    background: darken($light-orange, 10%);
+  }
+}
