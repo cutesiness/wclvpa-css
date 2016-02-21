@@ -45,26 +45,18 @@
 
 /* Before Content */
 
-.before-content {
+.before-content, #after-content {
   .xoxo {
     display: table;
     margin: -1em; // align the sides with main container
     border-spacing: 1em;
     li {
       display: table-cell;
-      width: 33.33%;
       padding: 1em;
       vertical-align: top;
-      &:nth-child(odd) {
-        background-color: $lightest-blue;
-      }
-      &:nth-child(even) {
-        background-color: $lightest-gray;
-      }
       .fa {
         display: block;
         margin: .2em 0;
-        font-size: 6em;
         text-align: center;
       }
     }
@@ -72,11 +64,40 @@
   .widget-title {
     text-align: center;
   }
-  .textwidget {
+}
 
+.before-content {
+  .xoxo {
+    li {
+      width: 33.33%;
+      &:nth-child(odd) {
+        background-color: $lightest-blue;
+      }
+      &:nth-child(even) {
+        background-color: $lightest-gray;
+      }
+      .fa {
+        font-size: 6em;
+      }
+    }
   }
 }
 
+
+#after-content {
+  .xoxo {
+    li {
+      width: 25%;
+      background-color: $lightest-gray;
+      .fa {
+        font-size: 4em;
+      }
+    }
+  }
+  .textwidget {
+    font: .8em/2 $sans-serif;
+  }
+}
 
 /* Content Sidebar */
 
