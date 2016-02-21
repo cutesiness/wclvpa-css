@@ -7,6 +7,9 @@
   a {
     color: $white;
     border-bottom-color: $white;
+    &:hover, &:focus {
+      border-bottom-color: $light-orange;
+    }
   }
   .xoxo {
     > li {
@@ -23,8 +26,22 @@
   }
 }
 
-.site-info {
-  padding: 1em 0;
+#footer-wrapper {
+  font: .72em/2 $sans-serif;
   text-align: center;
-  background: $orange;
+  background: $light-orange;
+  a {
+    display: inline-block;
+    padding: 0 .5em;
+    color: $white;
+    border: 0;
+    &:hover, &:focus {
+      background-color: lighten($light-orange, 10%);
+    }
+  }
+}
+
+#site-info, #site-generator {
+  display: inline-block;
+  margin: .5em 1em;
 }
