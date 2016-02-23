@@ -13,31 +13,43 @@
 }
 
 #container {
-  @include span(10);
-  @include push(1);
+  @include container(80%);
+}
+
+#content-row-wrapper {
+  .sidebar-row {
+    .widget-area {
+      display: none;
+    }
+  }
 }
 
 /* Sidebar conditional */
 
-#content-row-wrapper {
-  .sidebar-row {
-    #main {
-      padding: 0;
-      background: transparent;
-    }
-    #container {
-      @include span(9);
-      @include push(0);
-      background: $white;
-      #content {
-        padding: 1.5em 2em;
+body.blog, body.single {
+  #content-row-wrapper {
+    .sidebar-row {
+      #main {
+        padding: 0;
+        background: transparent;
       }
-    }
-    .widget-area {
-      @include span(3 last);
+      #container {
+        @include span(9);
+        @include push(0);
+        background: $white;
+        #content {
+          padding: 1.5em 2em;
+        }
+      }
+      .widget-area {
+        @include span(3 last);
+        display: block;
+      }
     }
   }
 }
+
+
 
 
 
