@@ -2,6 +2,7 @@ input {
   padding: .3em .8em;
   color: $text-color;
   font-family: $serif;
+  font-size: 1em;
   border-radius: $border-radius;
   border: 2px solid $light-gray;
   &:focus {
@@ -10,5 +11,17 @@ input {
   }
   &[type="submit"] {
     @extend %button-base;
+  }
+}
+
+textarea {
+  padding: .3em .8em;
+  color: $text-color;
+  font-family: $serif;
+  border-radius: $border-radius;
+  border: 2px solid $light-gray;
+  &:focus {
+    outline: none;
+    border-color: $blue;
   }
 }

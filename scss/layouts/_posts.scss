@@ -5,7 +5,24 @@ article {
 
 .post-edit-link {
   @extend %button;
-  padding: .05em .8em;
-  font-size: .7em;
+  padding: .32em .8em;
+  font-size: .88em;
   letter-spacing: .15em;
+  line-height: 1;
+}
+
+.entry-title {
+  font-size: 1.8em;
+  a {
+    border: 0;
+  }
+}
+
+.entry-content {
+  padding: 1em 0 0;
+}
+
+.entry-meta, .entry-utility {
+  font-family: $sans-serif;
+  font-size: .72em;
 }

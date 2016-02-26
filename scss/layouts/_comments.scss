@@ -1,0 +1,20 @@
+#commentform {
+  label {
+    display: inline-block;
+    width: 120px;
+    vertical-align: top;
+  }
+}
+
+.comment-notes {
+  font-family: $sans-serif;
+  font-size: .72em;
+}
+
+.form-allowed-tags {
+  font-family: $sans-serif;
+  font-size: .72em;
+  code {
+    font-family: monospace;
+  }
+}
