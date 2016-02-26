@@ -1,8 +1,21 @@
+#comments {
+  margin-top: 3em;
+}
+
 #commentform {
   label {
     display: inline-block;
     width: 120px;
     vertical-align: top;
+  }
+  input[type="text"], textarea {
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    @extend %button-orange;
+    text-transform: none;
   }
 }
 

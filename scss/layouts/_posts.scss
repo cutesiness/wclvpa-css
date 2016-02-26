@@ -68,3 +68,13 @@
     clear: both;
   }
 }
+
+
+/* Single Post Styles */
+
+body.single {
+  .entry-utility {
+    display: block;
+    margin: 1em 0 -2em;
+  }
+}
