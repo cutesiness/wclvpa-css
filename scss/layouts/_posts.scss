@@ -1,4 +1,4 @@
-.post {
+#content .post {
   margin: 2em 0 3em;
 }
 
@@ -132,15 +132,17 @@ blockquote {
   text-align: center;
 }
 
-.post, .page {
-  ul {
-    margin: 1em 0;
-    padding: 1em;
-    list-style-type: square;
-  }
-  ol {
-    margin: 1em 0;
-    padding: 1em;
-    list-style-type: decimal;
+#content {
+  .post, .page {
+    ul {
+      margin: 1em 0;
+      padding: 1em;
+      list-style-type: square;
+    }
+    ol {
+      margin: 1em 0;
+      padding: 1em;
+      list-style-type: decimal;
+    }
   }
 }
