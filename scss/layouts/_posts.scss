@@ -78,3 +78,69 @@ body.single {
     margin: 1em 0 -2em;
   }
 }
+
+/* Entry Content */
+
+blockquote {
+  position: relative;
+  margin: 1.65em 0;
+  padding: 0 4em;
+  color: lighten($text-color, 20%);
+  font-style: italic;
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "\201C";
+    color: lighten($lightest-blue, 7.5%);
+    font-family: "Georgia", serif;
+    font-size: 7em;
+    font-style: normal;
+    line-height: 1;
+  }
+}
+
+.wp-caption {
+  a {
+    border: 0;
+  }
+}
+
+.alignright {
+  float: right;
+  margin: 0 0 1em 1em;
+}
+
+.alignright {
+  float: right;
+  margin: 0 0 1em 1em;
+}
+
+.alignleft {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+.aligncenter {
+  display: block;
+  margin: 0 auto 1em;
+  text-align: center;
+}
+
+.wp-caption-text {
+  font: .72em/2 $sans-serif;
+  text-align: center;
+}
+
+.post, .page {
+  ul {
+    margin: 1em 0;
+    padding: 1em;
+    list-style-type: square;
+  }
+  ol {
+    margin: 1em 0;
+    padding: 1em;
+    list-style-type: decimal;
+  }
+}
