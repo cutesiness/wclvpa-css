@@ -1,0 +1,35 @@
+%accent-font {
+  font: bold .72em $sans-serif;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+
+.wcpt-schedule {
+  margin: .5em -10% 2em;
+  border: 1px solid $lightest-blue;
+  thead {
+    @extend %accent-font;
+//    color: $white;
+    text-align: left;
+    background-color: $lightest-blue;
+  }
+  tbody {
+    tr {
+      border-bottom: 1px solid darken($lightest-blue, 5%);
+    }
+  }
+  th, td {
+    padding: .5em .8em;
+  }
+  .wcpt-time {
+    @extend %accent-font;
+    width: 15%;
+  }
+  .wcpt-session-type-session {
+    width: 42.5%;
+  }
+  .wcpt-session-speakers {
+    display: block;
+  }
+}
+
