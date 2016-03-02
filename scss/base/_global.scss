@@ -17,6 +17,7 @@ a {
   text-decoration: none;
   border-bottom: 1px solid lighten($orange, 30%);
   &:hover, &:focus {
+    color: darken($link-color, 10%);
     border-bottom: 1px solid $orange;
   }
 }

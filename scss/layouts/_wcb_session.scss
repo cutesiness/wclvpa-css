@@ -1,0 +1,29 @@
+.wcb_session {
+  .entry-title {
+  //  margin: 0 -10%;
+    text-align: center;
+    img {
+      width: auto;
+      height: auto;
+    }
+  }
+}
+
+.session-speakers {
+  color: $blue;
+  letter-spacing: .06em;
+  text-align: center;
+  .meta-sep:first-of-type {
+    display: block;
+    width: 1px;
+    height: 1px;
+    color: $body-bg;
+    overflow: hidden;
+  }
+  &:first-line {
+    color: $text-color;
+    font: italic 1.38em/2 $serif;
+    letter-spacing: 0;
+    text-transform: none;
+  }
+}
