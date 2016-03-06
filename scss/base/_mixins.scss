@@ -1,3 +1,41 @@
+/* Media Queries */
+
+@mixin min($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+
+@mixin max($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin retina($width) {
+  @media
+  (-webkit-min-device-pixel-ratio: 2) and (min-width: $width),
+  (min-resolution: 192dpi) and (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin border-radius($border) {
+  -moz-border-radius: $border;
+  -webkit-border-radius: $border;
+  border-radius: $border;
+}
+
+@mixin firefox() {
+  @-moz-document url-prefix() {
+    @content;
+  }
+}
+
+
+/* Other */
+
 @mixin clearfix {
   &:after {
     content: '';
