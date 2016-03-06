@@ -1,13 +1,25 @@
 /* Also Organizers */
 
-.wcorg-organizer {
+.speaker-gravatar-list {
+  a {
+    border: 0;
+  }
+  .avatar {
+    border: 2px solid $lightest-blue;
+    border-radius: 50%;
+    &:hover {
+      border-color: $light-blue;
+    }
+  }
+}
+
+.wcorg-organizer, .wcb_speaker {
   margin: 2em 0 3em;
 }
 
-
-.wcorg-organizer-description {
+.wcorg-organizer-description, .speaker-bio {
   @include clearfix;
-  .avatar-default {
+  .avatar-default, .avatar {
     float: left;
     margin: 0 1em 1em 0;
     border: 2px solid $lightest-blue;
