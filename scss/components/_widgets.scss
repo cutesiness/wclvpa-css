@@ -77,7 +77,10 @@
         background-color: $lightest-gray;
       }
       .fa {
-        font-size: 6em;
+        font-size: 4em;
+        @include min($lg) {
+          font-size: 6em;
+        }
       }
     }
   }
@@ -90,7 +93,10 @@
       width: 25%;
       background-color: $lightest-gray;
       .fa {
-        font-size: 4em;
+        font-size: 3em;
+        @include min($lg) {
+          font-size: 4em;
+        }
       }
     }
   }

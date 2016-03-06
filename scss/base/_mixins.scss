@@ -34,7 +34,7 @@
 }
 
 
-/* Other */
+/* Custom Container */
 
 @mixin clearfix {
   &:after {
@@ -43,3 +43,14 @@
     clear: both;
   }
 }
+
+@mixin container--fluid {
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+  @include clearfix;
+  @include min($lg) {
+    max-width: 1180px;
+  }
+}
+

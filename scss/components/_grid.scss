@@ -1,7 +1,7 @@
 /* Wrappers */
 
 #after-header-wrapper, #before-content, #content-row-wrapper, #after-content-wrapper, #before-footer {
-  @include container;
+  @include container--fluid;
   margin: 2em auto;
 }
 
