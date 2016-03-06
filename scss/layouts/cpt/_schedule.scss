@@ -31,6 +31,13 @@
   .wcpt-session-speakers {
     display: block;
     font-style: italic;
+    a {
+      color: $blue;
+      border: 0;
+      &:hover, &:focus {
+      color: darken($blue, 15%);
+    }
+    }
   }
 }
 
