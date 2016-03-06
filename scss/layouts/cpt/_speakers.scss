@@ -1,0 +1,16 @@
+/* Also Organizers */
+
+.wcorg-organizer {
+  margin: 2em 0 3em;
+}
+
+
+.wcorg-organizer-description {
+  @include clearfix;
+  .avatar-default {
+    float: left;
+    margin: 0 1em 1em 0;
+    border: 2px solid $lightest-blue;
+    border-radius: 50%;
+  }
+}
