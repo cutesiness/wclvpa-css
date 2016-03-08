@@ -37,15 +37,21 @@ body.blog, body.single-post {
         background: transparent;
       }
       #container {
-        @include span(9);
-        @include push(0);
+        @include span(12);
+        @include min($md) {
+          @include span(9);
+          @include push(0);
+        }
         background: $white;
         #content {
           padding: 1.5em 2em;
         }
       }
       .widget-area {
-        @include span(3 last);
+        @include span(12);
+        @include min($md) {
+          @include span(3 last);
+        }
         display: block;
       }
     }
