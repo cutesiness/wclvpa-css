@@ -13,7 +13,10 @@
 }
 
 #container {
-  @include container(80%);
+  @include container;
+  @include min($md) {
+    @include container(80%);
+  }
 }
 
 #content-row-wrapper {

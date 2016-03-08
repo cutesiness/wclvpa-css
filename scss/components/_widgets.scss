@@ -6,8 +6,11 @@
     #searchform {
       > div {
         display: inline-block;
-        max-width: 720px;
+        max-width: 500px;
         width: 100%;
+        @include min($md) {
+          max-width: 720px;
+        }
       }
       &:before {
         content: '';
@@ -24,9 +27,12 @@
       font-size: 1em;
       vertical-align: middle;
       &[type="text"] {
-        max-width: 540px;
+        max-width: 300px;
         width: 100%;
         margin: 0 .5em;
+        @include min($md) {
+          max-width: 540px;
+        }
       }
       &[type="submit"] {
         @extend %button-light;
@@ -47,13 +53,15 @@
 
 .before-content, #after-content {
   .xoxo {
-    display: table;
-    margin: -1em; // align the sides with main container
-    border-spacing: 1em;
     li {
-      display: table-cell;
       padding: 1em;
       vertical-align: top;
+      .textwidget {
+        font-size: .72em;
+        @include min($md) {
+          font-size: 1em;
+        }
+      }
       .fa {
         display: block;
         margin: .2em 0;
@@ -68,7 +76,11 @@
 
 .before-content {
   .xoxo {
+    display: table;
+    margin: -1em; // align the sides with main container
+    border-spacing: 1em;
     li {
+      display: table-cell;
       width: 33.33%;
       &:nth-child(odd) {
         background-color: $lightest-blue;
@@ -87,11 +99,32 @@
 }
 
 
+/* After Content */
+
 #after-content {
   .xoxo {
+    text-align: center;
+    @include min($md) {
+      display: table;
+      margin: -1em; // align the sides with main container
+      border-spacing: 1em;
+    }
     li {
-      width: 25%;
+      display: inline-block;
+      width: 42%;
+      margin: 0 0 1em 0;
       background-color: $lightest-gray;
+      &:nth-child(odd) {
+        margin-right: 1em;
+        @include min($md) {
+          margin-right: 0;
+        }
+      }
+      @include min($md) {
+        display: table-cell;
+        width: 25%;
+        margin: 0;
+      }
       .fa {
         font-size: 3em;
         @include min($lg) {
