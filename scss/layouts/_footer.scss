@@ -1,9 +1,12 @@
 #before-footer-wrapper {
-  padding: 1em 0;
+  padding: 1em 3em;
   color: $white;
   font: .72em/2 $sans-serif;
   background-color: $light-blue;
   border-top: 5px solid $orange;
+  @include min($sm) {
+    padding: 1em 0;
+  }
   a {
     color: $white;
     border-bottom-color: $white;

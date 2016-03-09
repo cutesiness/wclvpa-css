@@ -7,7 +7,10 @@ body {
   background-image: url('../img/triangle-bg.png');
   &.admin-bar {
     #main-menu-wrapper {
-      top: 32px;
+      top: 46px;
+      @include min($sm) {
+        top: 32px;
+      }
     }
   }
 }
