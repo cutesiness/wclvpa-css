@@ -156,8 +156,11 @@
   .xoxo {
     > li {
       background: $body-bg;
-      margin: 0 0 2em;
+      margin: 1em;
       padding: 1.36em;
+      @include min($sm) {
+        margin: 0 0 2em;
+      }
     }
   }
 }

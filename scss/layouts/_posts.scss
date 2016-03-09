@@ -103,18 +103,19 @@ blockquote {
 }
 
 .alignright {
-  float: right;
-  margin: 0 0 1em 1em;
-}
-
-.alignright {
-  float: right;
-  margin: 0 0 1em 1em;
+  margin: 0 auto 1em;
+  @include min($sm) {
+    float: right;
+    margin: 0 0 1em 1em;
+  }
 }
 
 .alignleft {
-  float: left;
-  margin: 0 1em 1em 0;
+  margin: 0 auto 1em;
+  @include min($sm) {
+    float: left;
+    margin: 0 1em 1em 0;
+  }
 }
 
 .aligncenter {

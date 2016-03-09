@@ -9,24 +9,38 @@
   border: 1px solid $lightest-blue;
   thead {
     @extend %accent-font;
-//    color: $white;
-    text-align: left;
-    background-color: $lightest-blue;
+    display: none;
+    @include min($sm) {
+      //    color: $white;
+      text-align: left;
+      background-color: $lightest-blue;
+    }
   }
   tbody {
     tr {
+      display: block;
       border-bottom: 1px solid darken($lightest-blue, 5%);
+      @include min($sm) {
+        display: table-row;
+      }
     }
   }
   th, td {
+    display: block;
     padding: .5em .8em;
+    @include min($sm) {
+      display: table-cell;
+    }
   }
   .wcpt-time {
     @extend %accent-font;
     width: 15%;
   }
   .wcpt-session-type-session {
-    width: 42.5%;
+    width: 100%;
+    @include min($sm) {
+      width: 42.5%;
+    }
   }
   .wcpt-session-speakers {
     display: block;
