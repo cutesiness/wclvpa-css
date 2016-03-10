@@ -11,7 +11,6 @@
     @extend %accent-font;
     display: none;
     @include min($sm) {
-      //    color: $white;
       text-align: left;
       background-color: $lightest-blue;
     }
