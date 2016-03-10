@@ -80,9 +80,12 @@ body.single {
 blockquote {
   position: relative;
   margin: 1.65em 0;
-  padding: 0 4em;
+  padding: 0 2em;
   color: lighten($text-color, 20%);
   font-style: italic;
+  @include min($sm) {
+    padding: 0 4em;
+  }
   &:before {
     position: absolute;
     top: 0;
@@ -90,9 +93,12 @@ blockquote {
     content: "\201C";
     color: lighten($lightest-blue, 7.5%);
     font-family: "Georgia", serif;
-    font-size: 7em;
+    font-size: 4em;
     font-style: normal;
     line-height: 1;
+    @include min($sm) {
+      font-size: 7em;
+    }
   }
 }
 
