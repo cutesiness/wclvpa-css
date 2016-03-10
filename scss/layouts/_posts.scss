@@ -103,6 +103,7 @@ blockquote {
 }
 
 .alignright {
+  max-width: 100%;
   margin: 0 auto 1em;
   @include min($sm) {
     float: right;
@@ -111,6 +112,7 @@ blockquote {
 }
 
 .alignleft {
+  max-width: 100%;
   margin: 0 auto 1em;
   @include min($sm) {
     float: left;
@@ -120,6 +122,7 @@ blockquote {
 
 .aligncenter {
   display: block;
+  max-width: 100%;
   margin: 0 auto 1em;
   text-align: center;
 }

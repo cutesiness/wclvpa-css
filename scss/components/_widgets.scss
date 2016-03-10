@@ -64,7 +64,9 @@
       padding: 1em;
       vertical-align: top;
       .textwidget {
-        font-size: .72em;
+        @include min($xs) {
+          font-size: .72em;
+        }
       }
       .fa {
         display: block;
@@ -146,7 +148,7 @@
         margin: 0;
       }
       .textwidget {
-        font: .72em/2 $sans-serif;
+        font: 1em/2 $sans-serif;
         @include min($md) {
           font-size: .8em;
         }
