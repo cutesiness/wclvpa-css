@@ -13,13 +13,16 @@
         }
       }
       &:before {
-        content: '';
-        display: inline-block;
-        width: 28px;
-        height: 28px;
-        vertical-align: middle;
-        background: url('../img/search.svg') no-repeat right center;
-        background-size: contain;
+        display: none;
+        @include min($sm) {
+          content: '';
+          display: inline-block;
+          width: 28px;
+          height: 28px;
+          vertical-align: middle;
+          background: url('../img/search.svg') no-repeat right center;
+          background-size: contain;
+        }
       }
     }
     input {
@@ -27,9 +30,13 @@
       font-size: 1em;
       vertical-align: middle;
       &[type="text"] {
-        max-width: 300px;
+        max-width: 150px;
         width: 100%;
-        margin: 0 .5em;
+        margin: 0;
+        @include min($xs) {
+          max-width: 300px;
+          margin: 0 .5em;
+        }
         @include min($md) {
           max-width: 540px;
         }
@@ -58,9 +65,6 @@
       vertical-align: top;
       .textwidget {
         font-size: .72em;
-        @include min($md) {
-          font-size: 1em;
-        }
       }
       .fa {
         display: block;
@@ -93,6 +97,11 @@
       }
       &:nth-child(even) {
         background-color: $lightest-gray;
+      }
+      .textwidget {
+        @include min($md) {
+          font-size: 1em;
+        }
       }
       .fa {
         font-size: 4em;
@@ -136,6 +145,12 @@
         width: 25%;
         margin: 0;
       }
+      .textwidget {
+        font: .72em/2 $sans-serif;
+        @include min($md) {
+          font-size: .8em;
+        }
+      }
       .fa {
         font-size: 3em;
         @include min($lg) {
@@ -143,9 +158,6 @@
         }
       }
     }
-  }
-  .textwidget {
-    font: .8em/2 $sans-serif;
   }
 }
 

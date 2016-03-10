@@ -1,10 +1,13 @@
 body {
   color: $text-color;
-  font: $font-size $serif;
+  font: $font-size-xs $serif;
   line-height: 2;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url('../img/triangle-bg.png');
+  @include min($xs) {
+    font-size: $font-size;
+  }
   &.admin-bar {
     #main-menu-wrapper {
       top: 46px;

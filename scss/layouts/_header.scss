@@ -33,8 +33,12 @@
 
 #site-description {
   color: $white;
-  font: .8em $sans-serif;
+  font-family: $sans-serif;
+  font-size: 1em;
   letter-spacing: .11em;
+  @include min($xs) {
+    font-size: .8em;
+  }
   &:before {
     content: '';
     display: block;
@@ -50,13 +54,17 @@
 
 body.home {
   #header-container {
-    height: 600px;
+    @include min($xs) {
+      height: 600px;
+    }
   }
   #site-description {
     &:before {
-      width: 400px;
-      height: 400px;
-      margin: 0 auto 1.5em;
+      @include min($xs) {
+        width: 400px;
+        height: 400px;
+        margin: 0 auto 1.5em;
+      }
     }
   }
 }
