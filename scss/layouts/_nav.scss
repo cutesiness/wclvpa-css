@@ -28,11 +28,14 @@
   }
   .featured-button {
     @extend %button-orange;
-    margin: .7em  1em 1em 1em;
+    margin: .5em  1em 1em 1em;
+    padding: .1em .8em;
     font-size: .93em;
+    @include min($xs) {
+      margin-bottom: 0;
+    }
     @include min($sm) {
       float: right;
-      margin-bottom: 0;
     }
     @include min($lg) {
       margin-right: 0;
@@ -43,7 +46,7 @@
       display: inline-block;
       a {
         display: block;
-        padding: 1em 1.2em;
+        padding: .5em 1.2em;
         color: $white;
         border: 0;
         &:hover {
