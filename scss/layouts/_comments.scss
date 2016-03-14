@@ -1,5 +1,8 @@
 #comments {
   margin-top: 3em;
+  .nocomments {
+    display: none;
+  }
 }
 
 #commentform {
