@@ -29,8 +29,11 @@
   }
   .avatar {
     float: left;
-    margin: .2em .8em .5em 0;
+    margin: .5em .8em .5em 0;
     border-radius: 50%;
+    @include min($sm) {
+      margin-top: .2em;
+    }
   }
   .says {
     display: none;
