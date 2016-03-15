@@ -149,7 +149,7 @@
       }
       .textwidget {
         font: 1em/2 $sans-serif;
-        @include min($md) {
+        @include min($xs) {
           font-size: .8em;
         }
       }
@@ -166,7 +166,10 @@
 /* Content Sidebar */
 
 #content-row-1 {
-  font: .72em/2 $sans-serif;
+  font: 1em/2 $sans-serif;
+  @include min($xs) {
+    font-size: .72em;
+  }
   .xoxo {
     > li {
       background: $body-bg;

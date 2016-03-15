@@ -6,7 +6,10 @@
 }
 
 .commentlist {
-  font: .9em/2 $sans-serif;
+  font: 1em/2 $sans-serif;
+  @include min($xs) {
+    font-size: .9em;
+  }
   .comment {
     margin: .8em 0 3em;
     padding: 1.5em;
@@ -41,8 +44,11 @@
 }
 
 .comment-meta {
-  font-size: .8em;
   font-style: italic;
+  font-size: .89em;
+  @include min($xs) {
+    font-size: .8em;
+  }
   @include min($sm) {
     display: inline-block;
   }
@@ -57,7 +63,10 @@
 
 .comment-reply-link {
   margin-top: -1em;
-  font-size: .8em;
+  font-size: .89em;
+  @include min($xs) {
+    font-size: .8em;
+  }
 }
 
 #commentform {
@@ -84,7 +93,10 @@
 
 .form-allowed-tags {
   font-family: $sans-serif;
-  font-size: .72em;
+  font-size: .89em;
+  @include min($xs) {
+    font-size: .72em;
+  }
   code {
     font-family: monospace;
   }
