@@ -86,3 +86,17 @@
     font-family: monospace;
   }
 }
+
+#cancel-comment-reply-link {
+  display: inline-block;
+  margin-left: .5em;
+  color: darken($gray, 10%);
+  font-size: .69em;
+  font-style: italic;
+  font-weight: 400;
+  border: 0;
+  vertical-align: middle;
+  &:hover, &:focus {
+    color: $dark-gray;
+  }
+}
