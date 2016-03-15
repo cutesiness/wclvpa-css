@@ -1,8 +1,60 @@
 #comments {
-  margin-top: 3em;
+  margin-top: 4em;
   .nocomments {
     display: none;
   }
+}
+
+.commentlist {
+  font: .9em/2 $sans-serif;
+  .comment {
+    margin: .8em 0 3em;
+    padding: 1.5em;
+    background-color: $lightest-gray;
+  }
+  .children {
+    padding-left: 2em;
+    .comment {
+      margin: 2em 0 0;
+      padding: 0;
+    }
+  }
+
+}
+
+.comment-author {
+  @include min($sm) {
+    display: inline-block;
+    margin-right: .5em;
+  }
+  .avatar {
+    float: left;
+    margin: .2em .8em .5em 0;
+    border-radius: 50%;
+  }
+  .says {
+    display: none;
+  }
+}
+
+.comment-meta {
+  font-size: .8em;
+  font-style: italic;
+  @include min($sm) {
+    display: inline-block;
+  }
+  a {
+    color: darken($gray, 10%);
+    border: 0;
+    &:hover, &:focus {
+      color: $dark-gray;
+    }
+  }
+}
+
+.comment-reply-link {
+  margin-top: -1em;
+  font-size: .8em;
 }
 
 #commentform {

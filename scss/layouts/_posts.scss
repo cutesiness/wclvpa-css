@@ -1,5 +1,7 @@
 #content .post {
-  margin: 2em 0 3em;
+  &:not(:last-of-type) {
+    margin: 0 0 3em;
+  }
 }
 
 /*
@@ -35,8 +37,7 @@
 }
 
 .entry-utility {
-  display: none;
-  color: $gray;
+  color: darken($gray, 5%);
 }
 
 /* Entry Navigation */
