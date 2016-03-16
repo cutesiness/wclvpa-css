@@ -5,22 +5,50 @@
 }
 
 .wcpt-schedule {
-  margin: .5em -10% 2em;
-  border: 1px solid $lightest-blue;
+  margin: .5em auto 2em;
+  width: 90%;
+  border-top: 1px solid lighten($lightest-blue, 7.5%);
+  @include min($xs) {
+    width: 96%;
+  }
+  @include min($sm) {
+    margin: .5em -10% 2em;
+    width: auto;
+    border-top: 0;
+  }
   thead {
     @extend %accent-font;
     display: none;
     @include min($sm) {
+      display: table-header-group;
+      color: $white;
       text-align: left;
-      background-color: $lightest-blue;
+      background-color: $blue;
+      border-right: 1px solid $blue;
+      border-left: 1px solid $blue;
     }
+
   }
   tbody {
     tr {
       display: block;
-      border-bottom: 1px solid darken($lightest-blue, 5%);
+      border-bottom: 1px solid lighten($lightest-blue, 7.5%);
       @include min($sm) {
         display: table-row;
+
+      }
+      &:nth-child(even) {
+        background-color: lighten($lightest-blue, 13.5%);
+      }
+    }
+    td {
+      @include min($sm) {
+        border-right: 1px solid lighten($lightest-blue, 7.5%);
+      }
+      &:first-child {
+        @include min($sm) {
+          border-left: 1px solid lighten($lightest-blue, 7.5%);
+        }
       }
     }
   }
