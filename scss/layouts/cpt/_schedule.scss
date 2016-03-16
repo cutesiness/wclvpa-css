@@ -4,17 +4,31 @@
   text-transform: uppercase;
 }
 
+.page-slug-schedule {
+  .entry-content {
+    h1 {
+      font-size: 1.6em;
+      text-align: center;
+      @include min($sm) {
+        font-size: 2em;
+        text-align: left;
+      }
+    }
+  }
+}
+
 .wcpt-schedule {
   margin: .5em auto 2em;
   width: 90%;
-  border-top: 1px solid lighten($lightest-blue, 7.5%);
   @include min($xs) {
     width: 96%;
   }
   @include min($sm) {
-    margin: .5em -10% 2em;
     width: auto;
-    border-top: 0;
+  }
+  @include min($md) {
+    margin: .5em -10% 2em;
+
   }
   thead {
     @extend %accent-font;
@@ -61,7 +75,13 @@
   }
   .wcpt-time {
     @extend %accent-font;
-    width: 15%;
+    color: $white;
+    background-color: $blue;
+    @include min($sm) {
+      width: 15%;
+      color: $text-color;
+      background-color: transparent;
+    }
   }
   .wcpt-session-type-session {
     max-width: 100%;
