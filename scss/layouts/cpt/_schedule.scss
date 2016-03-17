@@ -2,6 +2,17 @@
   font: bold .72em $sans-serif;
   letter-spacing: .07em;
   text-transform: uppercase;
+
+}
+
+%track-name {
+  display: block;
+  margin: 0 0 .5em 0;
+  color: $blue;
+  font: normal .88em $sans-serif;
+  @include min($sm) {
+    display: none;
+  }
 }
 
 .page-slug-schedule {
@@ -64,13 +75,30 @@
           border-left: 1px solid lighten($lightest-blue, 7.5%);
         }
       }
+      &:nth-child(2) {
+        .wcpt-session-speakers {
+          &:after {
+            @extend %track-name;
+            content: 'Designers and Developers';
+          }
+        }
+      }
+      &:nth-child(3) {
+        .wcpt-session-speakers {
+          &:after {
+            @extend %track-name;
+            content: 'Users and Bloggers';
+          }
+        }
+      }
     }
   }
   th, td {
     display: block;
-    padding: .5em .8em;
+    padding: .8em;
     @include min($sm) {
       display: table-cell;
+      padding: .5em .8em;
     }
   }
   .wcpt-time {
@@ -94,10 +122,10 @@
     display: block;
     font-style: italic;
     a {
-      color: $blue;
+      color: $text-color;
       border: 0;
       &:hover, &:focus {
-      color: darken($blue, 15%);
+      color: lighten($text-color, 15%);
     }
     }
   }
