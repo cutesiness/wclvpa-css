@@ -6,10 +6,10 @@
     #searchform {
       > div {
         display: inline-block;
-        max-width: 500px;
+        max-width: 440px;
         width: 100%;
         @include min($md) {
-          max-width: 720px;
+          max-width: 680px;
         }
       }
       &:before {
@@ -30,7 +30,7 @@
       font-size: 1em;
       vertical-align: middle;
       &[type="text"] {
-        max-width: 150px;
+        max-width: 200px;
         width: 100%;
         margin: 0;
         @include min($xs) {
