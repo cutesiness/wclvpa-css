@@ -35,7 +35,7 @@
         margin: 0;
         @include min($xs) {
           max-width: 300px;
-          margin: 0 .5em;
+          margin: 0 .4em;
         }
         @include min($md) {
           max-width: 540px;
@@ -43,10 +43,12 @@
       }
       &[type="submit"] {
         @extend %button-light;
+        padding: 6px 18px; //firefox
         font-style: italic;
         letter-spacing: .05em;
         text-transform: none;
         border: 2px solid $lightest-gray;
+        vertical-align: middle;
         &:hover {
           border: 2px solid darken($lightest-gray, 10%);
         }
