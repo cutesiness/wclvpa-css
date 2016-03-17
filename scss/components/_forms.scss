@@ -26,3 +26,19 @@ textarea {
     border-color: $blue;
   }
 }
+
+
+/* Jetpack Form */
+
+.contact-form {
+  > div {
+    input {
+      max-width: 600px !important;
+      width: 100% !important;
+    }
+  }
+  textarea {
+    max-width: 600px;
+    width: 100% !important;
+  }
+}
