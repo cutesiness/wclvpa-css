@@ -53,9 +53,11 @@
 }
 
 %button-small {
-  font-size: .72em;
   letter-spacing: .07em;
   text-transform: uppercase;
+  @include min($xs) {
+    font-size: .72em;
+  }
 }
 
 .button--orange {

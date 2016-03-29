@@ -12,6 +12,11 @@ p {
   font-feature-settings: "liga", "dlig";
 }
 
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: $orange;
   font-family: $sans-serif;
@@ -25,10 +30,6 @@ h4 { font-size: 1.12em; }
 h5 { font-size: .83em; }
 h6 { font-size: .75em; }
 
-em {
-  font-style: italic;
-}
+em {  font-style: italic;  }
+strong {  font-weight: bold;  }
 
-strong {
-  font-weight: bold;
-}
