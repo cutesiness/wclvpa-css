@@ -37,10 +37,25 @@
   color: $white;
   background: $light-orange;
   &:hover {
+    color: $white;
     background: darken($light-orange, 10%);
   }
 }
 
-.orange-button {
+%button-blue {
+  @extend %button-base;
+  color: $white;
+  background: $blue;
+  &:hover {
+    color: $white;
+    background: darken($blue, 10%);
+  }
+}
+
+.button--orange {
   @extend %button-orange;
+}
+
+.button--blue {
+  @extend %button-blue;
 }
