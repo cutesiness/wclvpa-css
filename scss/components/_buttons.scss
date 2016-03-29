@@ -52,10 +52,25 @@
   }
 }
 
+%button-small {
+  font-size: .7em;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+
 .button--orange {
   @extend %button-orange;
+  &--small {
+    @extend %button-orange;
+    @extend %button-small;
+  }
 }
 
 .button--blue {
   @extend %button-blue;
+  &--small {
+    @extend %button-blue;
+    @extend %button-small;
+  }
 }
+
