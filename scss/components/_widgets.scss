@@ -162,7 +162,9 @@
         }
       }
       .button--orange, .button--blue {
-        font-size: .78em;
+        @include min($xs) {
+          font-size: .78em !important;
+        }
       }
     }
   }

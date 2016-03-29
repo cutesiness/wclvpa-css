@@ -56,7 +56,7 @@
   letter-spacing: .07em;
   text-transform: uppercase;
   @include min($xs) {
-    font-size: .72em;
+    font-size: .72em; // 16px by default
   }
 }
 
