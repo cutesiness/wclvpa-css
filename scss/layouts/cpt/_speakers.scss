@@ -26,3 +26,15 @@
     border-radius: 50%;
   }
 }
+
+.wcorg-organizer-description {
+  position: relative;
+  margin-top: 36px;
+  h3:first-of-type {
+    position: absolute;
+    top: -50px;
+    color: $gray;
+    font-weight: normal;
+    letter-spacing: .05em;
+  }
+}
