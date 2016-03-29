@@ -45,15 +45,15 @@
 %button-blue {
   @extend %button-base;
   color: $white;
-  background: $blue;
+  background: $light-blue;
   &:hover {
     color: $white;
-    background: darken($blue, 10%);
+    background: darken($light-blue, 10%);
   }
 }
 
 %button-small {
-  font-size: .7em;
+  font-size: .72em;
   letter-spacing: .07em;
   text-transform: uppercase;
 }
