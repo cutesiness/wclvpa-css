@@ -37,3 +37,7 @@
     background: darken($light-orange, 10%);
   }
 }
+
+.orange-button {
+  @extend %button-base;
+}
