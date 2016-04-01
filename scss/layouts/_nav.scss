@@ -43,14 +43,33 @@
   }
   ul {
     li {
+      position: relative;
       display: inline-block;
+      vertical-align: top;
+      &:hover {
+        background: darken($blue, 10%);
+      }
       a {
         display: block;
         padding: .5em 1.2em;
         color: $white;
         border: 0;
-        &:hover {
-          background: lighten($blue, 10%);
+      }
+      .sub-menu {
+        position: absolute;
+        display: none;
+        background: darken($blue, 10%);
+        li {
+          display: block;
+          border-top: 1px solid $orange;
+          &:hover {
+            background: lighten($blue, 10%);
+          }
+        }
+      }
+      &:hover {
+        .sub-menu {
+          display: block;
         }
       }
     }
