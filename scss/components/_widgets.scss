@@ -178,6 +178,7 @@
     input {
       &[type="submit"] {
         @extend .button--orange--small;
+        line-height: 2;
       }
     }
   }
