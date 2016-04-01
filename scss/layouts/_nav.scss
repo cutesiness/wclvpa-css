@@ -25,6 +25,7 @@
   }
   .menu-header, .menu {
     display: inline-block;
+    vertical-align: middle;
   }
   .featured-button {
     @extend %button-orange;
@@ -32,10 +33,11 @@
     padding: .1em .8em;
     font-size: .93em;
     @include min($xs) {
-      margin-bottom: 0;
+      margin-bottom: .5em;
     }
     @include min($sm) {
       float: right;
+      margin-bottom: 0;
     }
     @include min($lg) {
       margin-right: 0;
@@ -71,7 +73,9 @@
       }
       &:hover {
         .sub-menu {
-          display: block;
+          @include min($sm) {
+            display: block;
+          }
         }
       }
     }
