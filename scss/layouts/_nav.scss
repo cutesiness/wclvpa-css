@@ -58,7 +58,7 @@
       .sub-menu {
         position: absolute;
         display: none;
-        width: 100%;
+        min-width: 100%;
         background: darken($blue, 10%);
         li {
           display: block;
