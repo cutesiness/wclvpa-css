@@ -1,10 +1,14 @@
 #tix {
-  padding: 0 0 1em;
+  padding: 0 0 1em !important;
 }
 
 .tix_tickets_table {
   border: 1px solid lighten($lightest-blue, 7.5%);
-  @inlcude min($sm) {
+  @include min($sm) {
     border: 0;
   }
+}
+
+.tix-column-price {
+
 }
