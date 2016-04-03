@@ -28,7 +28,7 @@
   }
 }
 
-.wcpt-schedule {
+.wcpt-schedule, .tix_tickets_table {
   margin: .5em auto 2em;
   width: 90%;
   @include min($xs) {
