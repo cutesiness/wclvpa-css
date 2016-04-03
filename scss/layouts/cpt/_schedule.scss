@@ -114,12 +114,10 @@
   .wcpt-session-type-session {
     max-width: 100%;
     width: 100%;
-    border-right: 1px solid #deecf1;
-    border-left: 1px solid #deecf1;
+    border-right: 1px solid lighten($lightest-blue, 7.5%);
+    border-left: 1px solid lighten($lightest-blue, 7.5%);
     @include min($sm) {
       width: 42.5%;
-      border-right: 0;
-      border-left: 0;
     }
   }
   .wcpt-session-empty {

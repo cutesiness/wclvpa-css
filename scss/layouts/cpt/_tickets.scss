@@ -10,5 +10,22 @@
 }
 
 .tix-column-price {
+  &:before {
+    @extend %track-name;
+    content: 'Price';
+  }
+}
 
+.tix-column-remaining {
+  &:before {
+    @extend %track-name;
+    content: 'Remaining';
+  }
+}
+
+.tix-column-quantity {
+  &:before {
+    @extend %track-name;
+    content: 'Quantity';
+  }
 }
