@@ -6,4 +6,13 @@
     border-radius: 50%;
     pointer-events: none;
   }
+  .tix-field {
+    display: inline-block;
+    &.tix-attendee-twitter {
+      &:after {
+        content: ' ' ;
+        display: block;
+      }
+    }
+  }
 }
