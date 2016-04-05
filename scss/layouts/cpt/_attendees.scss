@@ -2,6 +2,12 @@
   .tix-attendee-list {
     text-align: center;
     list-style-type: none !important;
+    li {
+      width: 50%;
+      @include min($sm) {
+        width: 33.33%;
+      }
+    }
   }
   .avatar {
     display: block;
