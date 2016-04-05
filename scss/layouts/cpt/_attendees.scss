@@ -1,5 +1,4 @@
 #tix-attendees {
-  font-size: 1em;
   .avatar {
     width: 96px !important;
     height: 96px !important;
@@ -10,7 +9,9 @@
   }
   .tix-field {
     display: inline-block;
-    &.tix-attendee-twitter {
+    margin: 0;
+    font-size: 1em;
+    &.tix-attendee-twitter, &.tix-attendee-url {
       &:after {
         content: ' ' ;
         display: block;
