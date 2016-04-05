@@ -4,6 +4,7 @@
     list-style-type: none !important;
     li {
       width: 50%;
+      height: auto;
       @include min($sm) {
         width: 33.33%;
       }
