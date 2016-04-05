@@ -20,6 +20,8 @@
       font-size: 1em;
     }
     &.tix-attendee-twitter, &.tix-attendee-url {
+      text-decoration: underline;
+      text-decoration-color:  lighten($orange, 30%);
       border: 0;
       &:after {
         content: ' ' ;
