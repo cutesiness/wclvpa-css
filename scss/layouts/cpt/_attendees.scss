@@ -1,10 +1,11 @@
 #tix-attendees {
   .tix-attendee-list {
     text-align: center;
-    list-style-type: none;
+    list-style-type: none !important;
   }
   .avatar {
     display: block;
+    float: none;
     width: 96px !important;
     height: 96px !important;
     margin: 0 auto .5em;
@@ -13,13 +14,13 @@
     pointer-events: none;
   }
   .tix-field {
+    display: block;
     margin: 0;
     &.tix-attendee-name {
-      display: block;
       font-size: 1em;
     }
     &.tix-attendee-twitter, &.tix-attendee-url {
-      display: inline-block;
+      border: 0;
       &:after {
         content: ' ' ;
         display: block;
