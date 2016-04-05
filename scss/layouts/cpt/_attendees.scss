@@ -1,17 +1,25 @@
 #tix-attendees {
+  .tix-attendee-list {
+    text-align: center;
+    list-style-type: none;
+  }
   .avatar {
+    display: block;
     width: 96px !important;
     height: 96px !important;
-    margin: .4em 1em 1em 0;
+    margin: 0 auto .5em;
     border: 2px solid $lightest-blue;
     border-radius: 50%;
     pointer-events: none;
   }
   .tix-field {
-    display: inline-block;
     margin: 0;
-    font-size: 1em;
+    &.tix-attendee-name {
+      display: block;
+      font-size: 1em;
+    }
     &.tix-attendee-twitter, &.tix-attendee-url {
+      display: inline-block;
       &:after {
         content: ' ' ;
         display: block;
