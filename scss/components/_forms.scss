@@ -27,7 +27,7 @@ textarea, select {
 
 .contact-form {
   > div {
-    input {
+    input, select {
       max-width: 600px !important;
       width: 100% !important;
     }
