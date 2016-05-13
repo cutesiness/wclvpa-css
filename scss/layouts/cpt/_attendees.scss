@@ -3,8 +3,13 @@
     text-align: center;
     list-style-type: none !important;
     li {
-      width: 50%;
-      height: auto !important;
+      margin-bottom: 3em;
+      @include min($xs) {
+        width: 50%;
+        min-height: 210px;
+        height: auto !important;
+        margin-bottom: 2em;
+      }
       @include min($sm) {
         width: 33.33%;
       }
