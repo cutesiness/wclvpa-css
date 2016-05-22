@@ -194,6 +194,15 @@
     }
     .sponsor-logo {
       display: inline-block !important;
+      @include span(12);
+      @include min($md) {
+        @include span(4);
+      }
+      &:nth-child(3n) {
+        @include min($md) {
+          @include span(4 last);
+        }
+      }
     }
   }
 }
