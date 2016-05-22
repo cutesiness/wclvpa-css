@@ -192,23 +192,9 @@
     .sponsor-level {
       @include container;
       margin-bottom: 1em;
-      &.gold {
-        .sponsor-level-titlse {
-          color: #DAA520;
-        }
-      }
-      &.silver {
-        .sponsor-level-title {
-          color: #778899;
-        }
-      }
-      &.bronze {
-        .sponsor-level-title {
-          color: #D2691E;
-        }
-      }
     }
     .sponsor-level-title {
+      color: $white;
       font-family: $serif;
       font-style: italic;
       margin-bottom: .5em;
