@@ -200,11 +200,11 @@
       display: inline-block !important;
       @include span(12);
       @include min($md) {
-        @include span(6);
+        @include span(2);
       }
       &:nth-child(6n) {
         @include min($md) {
-          @include span(6 last);
+          @include span(2 last);
         }
       }
     }
