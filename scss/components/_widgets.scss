@@ -189,6 +189,9 @@
 
 #before-footer {
   .wcb_widget_sponsors {
+    .sponsor-level {
+      @include container;
+    }
     .sponsor-level-title {
       display: none;
     }
