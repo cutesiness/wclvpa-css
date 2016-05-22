@@ -184,6 +184,20 @@
   }
 }
 
+
+/* Before Footer (Sponsors) */
+
+#before-footer {
+  .wcb_widget_sponsors {
+    .sponsor-level-title {
+      display: none;
+    }
+    .sponsor-logo {
+      display: inline-block !important;
+    }
+  }
+}
+
 /* Content Sidebar */
 
 #content-row-1 {
