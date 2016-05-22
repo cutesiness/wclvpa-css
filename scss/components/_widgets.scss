@@ -191,6 +191,7 @@
   .wcb_widget_sponsors {
     .sponsor-level {
       @include container;
+      text-align: center;
     }
     .sponsor-level-title {
       display: none;
@@ -199,11 +200,11 @@
       display: inline-block !important;
       @include span(12);
       @include min($md) {
-        @include span(4);
+        @include span(6);
       }
-      &:nth-child(3n) {
+      &:nth-child(6n) {
         @include min($md) {
-          @include span(4 last);
+          @include span(6 last);
         }
       }
     }
