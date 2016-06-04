@@ -17,7 +17,7 @@
   margin: 0 0 3em;
 }
 
-.wcorg-organizer-description, .speaker-bio {
+.wcorg-organizer-description, .speaker-bio, .wcorg-speaker-description {
   @include clearfix;
   .avatar-default, .avatar {
     float: left;
