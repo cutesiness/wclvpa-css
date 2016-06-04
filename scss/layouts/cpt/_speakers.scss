@@ -13,7 +13,7 @@
   }
 }
 
-.wcorg-organizer, .wcb_speaker {
+.wcorg-organizer, .wcb_speaker, .wcorg-speaker {
   margin: 0 0 3em;
 }
 
@@ -28,9 +28,15 @@
   }
 }
 
+.wcorg-speaker {
+  h2 {
+    margin-bottom: .2em;
+  }
+}
+
 .wcorg-speaker-description {
   .avatar {
-    margin-bottom: .5em;
+    margin: 0 1em .5em 0;
   }
 }
 
