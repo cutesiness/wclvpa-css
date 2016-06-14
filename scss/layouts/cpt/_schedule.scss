@@ -79,7 +79,7 @@
         .wcpt-session-speakers {
           &:after {
             @extend %track-name;
-            content: 'Designers and Developers';
+            content: 'Foundry';
           }
         }
       }
@@ -87,7 +87,7 @@
         .wcpt-session-speakers {
           &:after {
             @extend %track-name;
-            content: 'Users and Bloggers';
+            content: 'Blast Furnace';
           }
         }
       }
