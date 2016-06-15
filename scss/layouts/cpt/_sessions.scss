@@ -12,6 +12,8 @@
 
 .entry-meta {
   &.session-speakers {
+    display: none;
+    /*
     color: $blue;
     letter-spacing: .06em;
     text-align: center;
@@ -27,7 +29,7 @@
       font: italic 1.38em/2 $serif;
       letter-spacing: 0;
       text-transform: none;
-    }
+    } */
   }
 }
 
