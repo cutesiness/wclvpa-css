@@ -121,9 +121,6 @@
     @include min($sm) {
       width: 42.5%;
     }
-    &:before {
-      display: none;
-    }
   }
   .wcpt-session-empty {
     display: none;
@@ -144,3 +141,8 @@
   }
 }
 
+.wcpt-session-type-session {
+  &:before {
+    display: none;
+  }
+}
