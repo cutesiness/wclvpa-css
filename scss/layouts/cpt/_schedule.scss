@@ -57,6 +57,8 @@
   tbody {
     tr {
       display: block;
+      margin: 0;
+      border: 0;
       border-bottom: 1px solid lighten($lightest-blue, 7.5%);
       @include min($sm) {
         display: table-row;
