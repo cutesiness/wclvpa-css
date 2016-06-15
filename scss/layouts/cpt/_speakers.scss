@@ -20,7 +20,7 @@
   }
 }
 
-.wcorg-organizer-description, .speaker-bio, .wcorg-speaker-description {
+.wcorg-organizer-description, .type-wcb_speaker, .wcorg-speaker-description {
   @include clearfix;
   .avatar-default, .avatar {
     float: left;

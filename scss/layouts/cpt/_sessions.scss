@@ -1,4 +1,4 @@
-.wcorg-session, .wcb_session, .wcb_sponsor {
+.wcorg-session, .wcb_session, .wcb_sponsor, .wcb_speaker {
   margin: 2em 0 3em;
   .entry-title, h2 {
   //  margin: 0 -10%;
@@ -33,10 +33,11 @@
   }
 }
 
-h2.session-speakers {
+h2.session-speakers, h2.speaker-sessions {
   text-align: center;
 }
 
-#session-speaker-names {
+#session-speaker-names, #speaker-session-names {
+  margin-bottom: 2em;
   text-align: center;
 }
