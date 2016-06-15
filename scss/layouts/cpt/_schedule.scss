@@ -116,6 +116,7 @@
   .wcpt-session-type-session {
     max-width: 100%;
     width: 100%;
+    line-height: 2;  // override shortcode.css
     border-right: 1px solid lighten($lightest-blue, 7.5%);
     border-left: 1px solid lighten($lightest-blue, 7.5%);
     @include min($sm) {
@@ -138,6 +139,9 @@
       color: lighten($text-color, 15%);
     }
     }
+  }
+  .wcpt-session-title {
+    display: inline;
   }
 }
 
