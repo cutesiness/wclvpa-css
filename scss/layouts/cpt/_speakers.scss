@@ -15,6 +15,9 @@
 
 .wcorg-organizer, .wcb_speaker, .wcorg-speaker {
   margin: 0 0 3em;
+  .entry-meta {
+    display: none;s
+  }
 }
 
 .wcorg-organizer-description, .speaker-bio, .wcorg-speaker-description {
