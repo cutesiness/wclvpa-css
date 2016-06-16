@@ -154,3 +154,12 @@ blockquote {
     }
   }
 }
+
+.post {
+  .entry-content {
+    .wcpt-schedule {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+}
