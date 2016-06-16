@@ -15,9 +15,12 @@
 
 .wcorg-organizer, .wcb_speaker, .wcorg-speaker {
   margin: 0 0 3em;
+  .entry-meta {
+    display: none;
+  }
 }
 
-.wcorg-organizer-description, .speaker-bio, .wcorg-speaker-description {
+.wcorg-organizer-description, .type-wcb_speaker, .wcorg-speaker-description {
   @include clearfix;
   .avatar-default, .avatar {
     float: left;
@@ -34,7 +37,7 @@
   }
 }
 
-.wcorg-speaker-description {
+.wcorg-speaker-description, .type-wcb_speaker {
   .avatar {
     margin: 0 1em .5em 0;
   }

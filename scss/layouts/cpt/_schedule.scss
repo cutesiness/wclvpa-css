@@ -57,6 +57,8 @@
   tbody {
     tr {
       display: block;
+      margin: 0;
+      border: 0;
       border-bottom: 1px solid lighten($lightest-blue, 7.5%);
       @include min($sm) {
         display: table-row;
@@ -111,9 +113,11 @@
       background-color: transparent;
     }
   }
-  .wcpt-session-type-session {
+  .wcpt-session-type-session, .global-session {
     max-width: 100%;
     width: 100%;
+    margin: 0;
+    line-height: 2;  // override shortcode.css
     border-right: 1px solid lighten($lightest-blue, 7.5%);
     border-left: 1px solid lighten($lightest-blue, 7.5%);
     @include min($sm) {
@@ -137,5 +141,14 @@
     }
     }
   }
+  .wcpt-session-title {
+    display: inline;
+    padding: 0;
+  }
 }
 
+.wcpt-session-type-session {
+  &:before {
+    display: none;
+  }
+}
